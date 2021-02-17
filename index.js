@@ -159,3 +159,57 @@ export const checkTeamOwner = async (teamId, userId) => {
   const response = await axios.get(`/teamownercheck/${teamId}/${userIdString}`)
   return response.data.data.isOwner
 }
+
+export const subscribeToMatch = async (data) => {
+    const response = await axios.post("/subscription", data);
+    return response.data;
+  };
+  
+  export const getSubscribedMatches = async (userId) => {
+    const response = await axios.get(`/subscription/${userId}`);
+    return response.data;
+  };
+  
+  export const removeSubscription = async (id) => {
+    const response = await axios.delete(`/subscription/${id}`);
+    return response.data;
+  };
+
+  export const getAllTeams = async () => {
+    const response = await axios.get(`/team`);
+    return response.data;
+  };
+  export const createTeam = async (data) => {
+    const response = await axios.post(`/team`, data);
+    return response.data;
+  };
+
+  export const createChallengeMatch = async (data) => {
+    const response = await axios.post("/match/challenge", data);
+    return response;
+  };
+  
+  export const getTeamPlayers = async (teamId) => {
+    const response = await axios.get(`/player/team/${teamId}`);
+    return response.data;
+  };
+  export const addPlayer = async (data) => {
+    const response = await axios.post(`/player`, data);
+    return response.data;
+  };
+
+  export const clearCompleteMatchData = async (matchId, teamAId, teamBId) => {
+    const response = await axios.delete(
+      `/match/${matchId}/${teamAId}/${teamBId}`
+    );
+    return response;
+  };
+  
+  export const checkIsMatchVerified = async (matchId) => {
+    const response = await axios.get(`/match/isverified/${matchId}`);
+    return response.data.data.is_verified;
+  };
+  export const verifyMatch = async (data, matchId) => {
+    const response = await axios.patch(`/match/verify/${matchId}`, data);
+    return response.data;
+  };

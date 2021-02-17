@@ -1,15 +1,21 @@
 {
   "name": "crickboardapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamsWEB/CrickboardApi.git"
+  },
+  "keywords": [
+    "Crickboard","Api"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Shubham Agrawal <shubhama664@gmail.com> (https://github.com/shubhamsWEB)",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
-    "dotenv": "^8.2.0"
+    "axios": "^0.21.1"
   }
 }
