@@ -1,6 +1,6 @@
 {
   "name": "crickboardapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -8,7 +8,8 @@
     "url": "git+https://github.com/shubhamsWEB/CrickboardApi.git"
   },
   "keywords": [
-    "Crickboard","Api"
+    "Crickboard",
+    "Api"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +17,11 @@
   "author": "Shubham Agrawal <shubhama664@gmail.com> (https://github.com/shubhamsWEB)",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1"
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "path": "^0.12.7"
   }
 }
