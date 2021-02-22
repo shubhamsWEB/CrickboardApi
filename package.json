@@ -1,6 +1,6 @@
 {
   "name": "crickboardapi",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -22,6 +22,7 @@
     "@babel/preset-env": "^7.12.16",
     "axios": "^0.21.1",
     "babel-loader": "^8.2.2",
+    "metro-react-native-babel-preset": "^0.65.1",
     "path": "^0.12.7"
   },
   "devDependencies": {
