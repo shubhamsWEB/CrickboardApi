@@ -257,5 +257,12 @@ export const apiCalls = (axios) => {
       });
       return response.data;
     },
+    checkisAuthorized:async (matchId, teamId, userId) => {
+      const userIdString = JSON.stringify(userId);
+      const response = await axios.get(
+        `/match/isauthorized/${matchId}/${teamId}/${userIdString}`
+      );
+      return response.data.data.isValid;
+    }
   };
 };
